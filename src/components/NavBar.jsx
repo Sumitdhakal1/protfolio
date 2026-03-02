@@ -2,9 +2,9 @@ import React from "react";
 
 const NavBar = () => {
   return (
-    <div className="fixed top-0 left-0 0 h-0.5 bg-stone-900 z-50 ">
+    <div className="fixed top-0 left-0  h-0.5 bg-stone-900 z-50 origin-left transition-all duration-100">
       <nav
-        className={`fixed top-0 left-0 right-0 z-40 flex justify-between items-center bg-[#f7f6f3]/85 backdrop-blur-md border-b border-stone-900/5  font-sans`}
+        className={`fixed top-0 left-0 right-0 z-40 flex justify-between items-center  px-12 py-5 bg-[#f7f6f3]/85 backdrop-blur-md border-b border-stone-900/5  font-sans`}
       >
         <div className="font-serif italic text-xl tracking-tight text-stone-900">
           Protfolio
@@ -14,7 +14,7 @@ const NavBar = () => {
             <li key={s}>
               <a
                 href={`#${s}`}
-                className="nav-link text-xs tracking-widest uppercase font-sans text-stone-400 hover:text-stone-900 transition-colors duration-200 no-underline"
+                className="text-xs tracking-widest uppercase font-sans text-stone-400 hover:text-stone-900 transition-colors duration-200 no-underline"
               >
                 {s}
               </a>
