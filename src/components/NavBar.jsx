@@ -1,10 +1,15 @@
 import React from "react";
-
+import useScrollProgress from "../hooks/useScrollProgress";
 const NavBar = () => {
+  const progress = useScrollProgress();
+  const scrolled = progress > 0.02;
   return (
-    <div className="fixed top-0 left-0  h-0.5 bg-stone-900 z-50 origin-left transition-all duration-100">
+    <div
+      className="fixed top-0 left-0  h-0.5 bg-stone-900 z-50 origin-left transition-all duration-100"
+      style={{ width: `${progress * 100}%` }}
+    >
       <nav
-        className={`fixed top-0 left-0 right-0 z-40 flex justify-between items-center  px-12 py-5 bg-[#f7f6f3]/85 backdrop-blur-md border-b border-stone-900/5  font-sans`}
+        className={`fixed top-0 left-0 right-0 z-40 flex justify-between items-center  px-12 py-5 bg-[#f7f6f3]/85 backdrop-blur-md border-b border-stone-900/5  font-sans ${scrolled ? "px-12 py-4" : "px-12 py-5"}`}
       >
         <div className="font-serif italic text-xl tracking-tight text-stone-900">
           Protfolio
