@@ -61,7 +61,7 @@ const Skills = () => {
 
   return (
     <section id="skills" className="py-28 px-12 bg-[#f7f6f3]">
-      <div className=" mx-auto" ref={ref}>
+      <div className="max-w-6xl mx-auto" ref={ref}>
         <Reveal>
           <h2 className="font-serif text-[clamp(2rem,4vw,3.5rem)] leading-none tracking-[-0.025em] font-normal mb-10 text-stone-900">
             Skills

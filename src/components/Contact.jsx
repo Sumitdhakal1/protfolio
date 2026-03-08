@@ -61,7 +61,9 @@ const Contact = () => {
               </div>
             </div>
             <div className="flex flex-col gap-1.5">
-              <label>Subject</label>
+              <label className="text-[.65rem] tracking-[.12em] uppercase text-stone-400 font-sans">
+                Subject
+              </label>
               <input
                 name="subject"
                 className={inputClass}
@@ -69,7 +71,9 @@ const Contact = () => {
               />
             </div>
             <div className="flex flex-col ga-1.5">
-              <label>Message</label>
+              <label className="text-[.65rem] tracking-[.12em] uppercase text-stone-400 font-sans">
+                Message
+              </label>
               <textarea
                 name="message"
                 className={inputClass}
